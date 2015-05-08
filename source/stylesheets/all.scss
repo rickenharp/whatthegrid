@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+$visual-grid: true;
+
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+div.outer {
+  @include outer-container;
+  .small-content {
+    @include span-columns(4);
+  }
+}
